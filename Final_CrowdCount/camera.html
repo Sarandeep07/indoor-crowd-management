@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="camera_style.css">
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>HOME</h1>
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href="./home.html" target="_parent">Home</a></li>
+                <li class="active"><a href="./demo2.html" target="_blank">Real Time Feed</a></li>
+                <li class="active"><a href="./documentation.html" target="_blank">Documentation</a></li>
+                <li class="active"><a href="./aboutus.html" target="_blank">About Us</a></li>
+            </ul>
+            <button>
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </section>
+      </header>
+    <div class="container">
+        <div class="col col1">
+            <h2 class="heading">CAMERA 1</h2>
+                <center><img id="video1" src="http://127.0.0.1:5001/video1" width="640" height="480"></center>
+                <div class="counter_container">
+                    <h1>Counter</h1>
+                    <span id="counter"></span>
+                </div>
+        </div>
+        <div class="col col2">
+            <h2 class="heading">CAMERA 2</h2>
+                <center><img id="video2" src="http://127.0.0.1:8001/video1" width="640" height="480"></center>
+                <div class="counter_container">
+                    <h1>Counter</h1>
+                    <span id="counter1"></span>
+                </div>
+        </div>
+    </div>
+</div>
+<script src="final.js"></script>
+</body>
+</html>
