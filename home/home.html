@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/741bfdedb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home_style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="full-screen-video-container">
+        <video id = "videoBG" autoplay muted loop>
+          <source src="./video2.mp4" type="video/mp4"/>
+        </video>
+    <div class="wrapper">
+    <header>
+        <h1>HOME</h1>
+        <section class="menu">
+            <ul class="menu-list">
+                <li class="active"><a href="./home.html" target="_parent">Home</a></li>
+                <li class="active"><a href="./camera.html" target="_blank">Real Time Feed</a></li>
+                <li class="active"><a href="./documentation.html" target="_blank">Documentation</a></li>
+                <li class="active"><a href="./aboutus.html" target="_blank">About Us</a></li>
+            </ul>
+            <button>
+                <i class="fa-solid fa-xmark"></i>
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </section>
+    </header>
+
+    <section class="main">
+
+        <section class="left">
+            <div class="container1"><br><br><br><br><br>
+                <div class="animate-charcter">EFFICIENT INDOOR CROWD MANAGEMENT SYSTEM</div>
+            </div><br><br><br><br><br><br><br><br>
+                <form action="./camera.html" target="_blank">
+                    <button type="submit" class="glow-on-hover">Real Time Feed</button>
+                </form>
+        </section>
+
+        <section class="right">
+            <img src="./images/Counter Gif - Ae Freebie.gif" alt="Langing image">
+        </section>
+
+    </section>
+</div>
+</div>
+    <script>
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu button');
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('opened')
+        })
+    </script>
+</body>
+</html>

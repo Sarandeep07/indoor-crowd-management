@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="documentation_style.css">
+    <title>Documentation</title>
+</head>
+<body>
+    <div class="full-screen-video-container">
+        <video id = "videoBG" autoplay muted loop>
+          <source src="./images/video.mp4" type="video/mp4"/>
+        </video>
+        <div class="wrapper">
+            <header>
+                <h1>DOCUMENTATION</h1>
+                <section class="menu">
+                    <ul class="menu-list">
+                        <li class="active"><a href="./home.html" target="_parent">Home</a></li>
+                        <li class="active"><a href="./camera.html" target="_blank">Real Time Feed</a></li>
+                        <li class="active"><a href="./documentation.html" target="_parent">Documentation</a></li>
+                        <li class="active"><a href="./aboutus.html" target="_blank">About Us</a></li>
+                    </ul>
+                    <button>
+                        <i class="fa-solid fa-xmark"></i>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </section>
+            </header>
+        <center>
+            <div class="card">
+                <h2 class="heading">A Quick Glance into the Project</h2>
+                <p class="para">
+                    Efficient Indoor Crowd Management is a critical aspect of ensuring Public Safety and optimizing 
+                    Crowd Control in various environments such as shopping malls, event venues, and transportation hubs. 
+                    This project aims to develop a sophisticated Crowd Management System using YOLO (You Only Look Once) 
+                    Object Detection algorithm and Flask Web Framework. The system utilizes Computer Vision techniques to 
+                    detect and track individuals in real-time, enabling accurate crowd counting and monitoring. By providing 
+                    real-time insights into crowd density and movement patterns, the system facilitates Efficient Crowd Management 
+                    and enhances overall security measures.
+                </p>
+                <p class="para">  
+                    The proposed system leverages the power of YOLO, an advanced object detection model, to accurately identify 
+                    and track individuals within a video stream. By applying this algorithm to live camera feeds, the system is 
+                    able to detect and count the number of people present in a given staircase. The captured data is then processed 
+                    and displayed in a User-friendly Web Interface created using Flask, allowing authorized personnel to monitor crowd 
+                    levels and make informed decisions regarding crowd control measures. Additionally, the system incorporates features 
+                    like color-coded threshold alerts, where the display changes to red when the crowd density exceeds a predefined threshold, 
+                    providing visual cues for immediate action and redirecting the crowd to the other staircase. By continuously refining the 
+                    algorithm and expanding the system's capabilities, it has the potential to be deployed in various domains, ranging from public 
+                    safety and security to crowd analytics for business optimization. This combination of YOLO-based object detection and Flask web 
+                    framework presents a powerful solution for Real-Time Crowd Monitoring and opens avenues for future research and advancements in 
+                    the field.
+                </p>
+                <h4>
+                    Keywords: Crowd Management, Object Detection, Real-time monitoring, Indoor security, YOLO algorithm, 
+                    Flask web framework, Crowd Counting, Public Safety, Computer Vision, Machine Learning
+                </h4>
+            </div>
+        </center>
+</div>
+</div>
+<script>
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu button');
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('opened')
+    })
+</script>
+</body>
+</html>
