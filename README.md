@@ -10,8 +10,6 @@ This combination of YOLO-based object detection and Flask web framework presents
 HTML, CSS, JAVASCRIPT, PYTHON, FLASK, OPENCV, YOLO, THREADING & QUEUE MODULE, CORS 
 ## RUN THIS ON LOCAL SYSTEM
 To run this on your local system : <BR>
-Clone this repo <BR>
-```
 Install the required libraries(install using pip/condo the requirements_windows.txt for Windows and requirements_macm1.txt for Apple ARM)<BR>
 ```
 pip install -r requirements_windows.txt  
