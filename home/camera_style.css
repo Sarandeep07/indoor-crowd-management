@@ -98,7 +98,7 @@ span {
 
 
 header {
-  color: #711def;
+  color: #000;
   position: fixed;
   top: 0;
   height: 80px;
@@ -123,24 +123,6 @@ header h1 {
 
 .menu button {
   display: none;
-}
-
-.menu-list {
-  list-style: none;
-  display: flex;
-}
-
-.menu-list li {
-  display: inline-block;
-  margin-left: 32px;
-  font-size: 1.1em;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.menu-list li.active,
-.menu-list li:hover {
-  color: #ff5360;
 }
 
 .main {
