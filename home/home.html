@@ -1,59 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/741bfdedb0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="home_style.css">
-    <title>Home</title>
+    <title>Efficient Indoor Crowd Management</title>
+    <link rel="stylesheet" href="home_style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
 </head>
+
 <body>
-    <div class="full-screen-video-container">
-        <video id = "videoBG" autoplay muted loop>
-          <source src="./video2.mp4" type="video/mp4"/>
-        </video>
-    <div class="wrapper">
-    <header>
-        <h1>HOME</h1>
-        <section class="menu">
-            <ul class="menu-list">
-                <li class="active"><a href="./home.html" target="_parent">Home</a></li>
-                <li class="active"><a href="./camera.html" target="_blank">Real Time Feed</a></li>
-                <li class="active"><a href="./documentation.html" target="_blank">Documentation</a></li>
-                <li class="active"><a href="./aboutus.html" target="_blank">About Us</a></li>
+    <nav id="desktop-nav">
+        <div class="logo">HOME</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="./camera.html" target="_blank">Real Time Feed</a></li>
+                <li><a href="#documentation">Documentation</a></li>
+                <li><a href="#about-us">About Us</a></li>
             </ul>
-            <button>
-                <i class="fa-solid fa-xmark"></i>
-                <i class="fa-solid fa-bars"></i>
-            </button>
+        </div>
+    </nav>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#11014; </button>
+    <section id="home-page">
+        <section id="home-title">
+            <h1 class="heading-1">EFFICIENT INDOOR CROWD MANAGEMENT</h1>
+            <form action="./camera.html" target="_blank">
+                <button type="submit" class="glow-on-hover">Real Time Feed</button>
+            </form>
         </section>
-    </header>
-
-    <section class="main">
-
-        <section class="left">
-            <div class="container1"><br><br><br><br><br>
-                <div class="animate-charcter">EFFICIENT INDOOR CROWD MANAGEMENT SYSTEM</div>
-            </div><br><br><br><br><br><br><br><br>
-                <form action="./camera.html" target="_blank">
-                    <button type="submit" class="glow-on-hover">Real Time Feed</button>
-                </form>
+        <section id="home-pic-id">
+            <img class="home-pic" src="image.png">
         </section>
-
-        <section class="right">
-            <img src="./images/Counter Gif - Ae Freebie.gif" alt="Langing image">
-        </section>
-
     </section>
-</div>
-</div>
-    <script>
-        var menu = document.querySelector('.menu');
-        var menuBtn = document.querySelector('.menu button');
-        menuBtn.addEventListener('click', () => {
-            menu.classList.toggle('opened')
-        })
-    </script>
+    <section id="documentation">
+        <div class="title-div">
+            <p class="title">Documentation</p>
+        </div>
+        <div class="doc-content">
+            <div class="doc-photo-class">
+                <img class="doc-pic" src="doc-img.png">
+            </div>
+            <div class="text-card">
+                <u>
+                    <h2 class="text-card-head">A Quick Glance into the Project</h2>
+                </u>
+                <p class="para">
+                    Efficient Indoor Crowd Management is a critical aspect of ensuring Public Safety and optimizing
+                    Crowd Control in various environments such as shopping malls, event venues, and transportation hubs.
+                    This project aims to develop a sophisticated application using YOLO (You Only Look Once)
+                    Object Detection algorithm and Flask Web Framework. The system utilizes Computer Vision techniques
+                    to
+                    detect and track individuals in real-time, enabling accurate crowd counting and monitoring. By
+                    providing
+                    real-time insights, the system facilitates Efficient Crowd Management
+                    and enhances overall security measures.
+                </p>
+                <p class="para">
+                    The proposed system leverages the power of YOLO to accurately identify and track individuals within
+                    a video stream.
+                    The captured data is then processed and displayed in a User-friendly Web Interface created using
+                    Flask, allowing authorized personnel to monitor crowd levels and make informed decisions regarding
+                    crowd control
+                    measures. Additionally, the system incorporates features like color-coded threshold alerts, where
+                    the display changes
+                    to red when the crowd density exceeds a predefined threshold, providing visual cues for immediate
+                    action and redirecting
+                    the crowd to the other staircase.
+                </p>
+                <h4 class="para">
+                    Keywords: Crowd Management, Object Detection, Real-time monitoring, Indoor security, YOLO algorithm,
+                    Flask web framework, Crowd Counting, Public Safety, Computer Vision, Machine Learning
+                </h4>
+            </div>
+        </div>
+    </section>
+    <section id="about-us">
+        <div class="title-div">
+            <p class="title">About Us</p>
+        </div>
+        <div class="about-us-box">
+            <div class="about-card">
+                <img src="about-photos/sarandeep.jpeg" alt="Sarandeep" class="card-img">
+                <h2 class="About-Name">BS Sarandeep Sabut</h2>
+                <p class="about-title">Integration</p>
+                <div class="about-links">
+                    <a class="about-link" href="https://github.com/Sarandeep07" target="_blank">
+                        <img class="about-git-icon" src="icons/github-mark.png">
+                    </a>
+                    <a class="about-link" href="https://www.linkedin.com/in/sarandeep-sabut-0b007a217/" target="_blank">
+                        <img class="about-linkdin-icon" src="icons/linkedin.png">
+                    </a>
+                </div>
+
+            </div>
+            <div class="about-card">
+                <img src="about-photos/astitva.jpeg" alt="Astitva" class="card-img">
+                <h2 class="About-Name">Astitva Agarwal</h2>
+                <p class="about-title">Front End Developer</p>
+                <div class="about-links">
+                    <a class="about-link" href="https://github.com/astitvaAgarwal2001" target="_blank">
+                        <img class="about-git-icon" src="icons/github-mark.png">
+                    </a>
+                    <a class="about-link" href="https://www.linkedin.com/in/astitva-agarwal-4251281b7/" target="_blank">
+                        <img class="about-linkdin-icon" src="icons/linkedin.png">
+                    </a>
+                </div>
+
+            </div>
+            <div class="about-card">
+                <img src="about-photos/adarsh.jpeg" alt="Adarsh" class="card-img">
+                <h2 class="About-Name">Adarsh Keshri</h2>
+                <p class="about-title">Back End Developer</p>
+                <div class="about-links">
+                    <a class="about-link" href="https://github.com/adarshkeshri" target="_blank">
+                        <img class="about-git-icon" src="icons/github-mark.png">
+                    </a>
+                    <a class="about-link" href="https://www.linkedin.com/in/adarsh-keshri" target="_blank">
+                        <img class="about-linkdin-icon" src="icons/linkedin.png">
+                    </a>
+                </div>
+
+            </div>
+            <div class="about-card">
+                <img src="about-photos/yash.jpeg" alt="Yash" class="card-img">
+                <h2 class="About-Name">Yash Anand</h2>
+                <p class="about-title">Back End Developer</p>
+                <div class="about-links">
+                    <a class="about-link" href="https://github.com/yashanand23" target="_blank">
+                        <img class="about-git-icon" src="icons/github-mark.png">
+                    </a>
+                    <a class="about-link" href="https://www.linkedin.com/in/yash-anand-a10a13236/" target="_blank">
+                        <img class="about-linkdin-icon" src="icons/linkedin.png">
+                    </a>
+                </div>
+
+            </div>
+            <div class="about-card">
+                <img src="" alt="Vansh" class="card-img">
+                <h2 class="About-Name">Vansh Saluja</h2>
+                <p class="about-title">Machine Learning Developer</p>
+                <div class="about-links">
+                    <a class="about-link" href="https://github.com/" target="_blank">
+                        <img class="about-git-icon" src="icons/github-mark.png">
+                    </a>
+                    <a class="about-link" href="https://www.linkedin.com/login" target="_blank">
+                        <img class="about-linkdin-icon" src="icons/linkedin.png">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="./camera.html" target="_blank">Real Time Feed</a></li>
+                    <li><a href="#documentation">Documentation</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                </ul>
+            </div>
+        </footer>
+    </section>
+    <script src="./script.js"></script>
 </body>
+
 </html>
