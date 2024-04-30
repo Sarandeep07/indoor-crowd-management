@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
     margin: 0;
@@ -53,8 +54,10 @@ a:hover {
 }
 
 .logo {
+    font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
     font-size: 2rem;
-    font-weight: bold;
 }
 
 .logo:hover {
@@ -340,13 +343,14 @@ section {
     margin-top: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.about-us-box{
+.about-us-box {
     display: flex;
 }
-.about-card{
+
+.about-card {
     background-color: rgb(234, 230, 230);
     height: 90%;
     width: 18%;
@@ -355,7 +359,8 @@ section {
     border-radius: 5%;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
-.card-img{
+
+.card-img {
     width: 96%;
     height: 50%;
     border-radius: 5%;
@@ -363,32 +368,39 @@ section {
     object-fit: cover;
     object-position: center;
 }
-.About-Name{
+
+.About-Name {
     margin-top: 5%;
     text-align: center;
     font-family: Sans-serif;
     color: #333131;
     text-decoration: underline;
 }
-.about-title{
+
+.about-title {
     margin: 2%;
     text-align: center;
     color: grey;
 }
-.about-links{
+
+.about-links {
     margin: 6%;
     height: 15%;
 }
-.about-links{
+
+.about-links {
     display: flex;
 }
-.about-git-icon{
+
+.about-git-icon {
     height: 100%;
 }
-.about-linkdin-icon{
+
+.about-linkdin-icon {
     height: 100%;
 }
-.about-link{
+
+.about-link {
     width: 50%;
     text-align: center;
 }
@@ -399,9 +411,10 @@ footer {
     margin-top: 6vh;
 }
 
-footer p{
+footer p {
     text-align: center;
 }
+
 .nav-links-container {
     display: flex;
     justify-content: center;

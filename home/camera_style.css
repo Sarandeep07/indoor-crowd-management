@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
 *{
   margin: 0px;
   box-sizing: border-box;
@@ -113,8 +116,10 @@ header {
 
 header h1 {
   text-transform: uppercase;
-  font-size: 1.7em;
-  letter-spacing: 1px;
+  font-family: "Pacifico", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
 }
 
 .menu {
@@ -257,6 +262,7 @@ header h1 {
       color: #fff;
   }
 }
+
 
 /* POP-UP TEXT */
 
